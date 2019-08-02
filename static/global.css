@@ -1,0 +1,47 @@
+
+/* CONSTANTS */
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        /* DARK THEME */
+
+    }
+}
+
+:root {
+    --default-font: 
+        system, 
+        -apple-system, 
+        ".SFNSText-Regular", 
+        "San Francisco", 
+        "Roboto", 
+        "Segoe UI", 
+        "Helvetica Neue", 
+        "Lucida Grande", 
+        sans-serif;
+
+    --main-width: 80ch;
+    --aside-width: 20ch;
+}
+
+
+/* CODE */
+
+html {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font);
+    width: 100%;
+    max-width: calc(var(--main-width) + var(--aside-width));
+}
