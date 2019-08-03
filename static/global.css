@@ -1,14 +1,19 @@
 
 /* CONSTANTS */
 
-@media (prefers-color-scheme: dark) {
-    :root{
-        /* DARK THEME */
+:root[data-theme="dark"] {
+    /* DARK THEME */
+    --bg-color: #222;
+    --bgA-color: #000;
+    --fg-color: #fff;
 
-    }
 }
 
 :root {
+    --bg-color: #fff;
+    --bgA-color: #eee;
+    --fg-color: #000;
+
     --default-font: 
         system, 
         -apple-system, 
@@ -22,26 +27,91 @@
 
     --main-width: 80ch;
     --aside-width: 20ch;
+    --margin-size: 2ch;
 }
 
 
 /* CODE */
 
-html {
-    background-color: #fff;
-    height: 100%;
-    width: 100%;
 
+html {
+    background-color: var(--bgA-color);
+    color: var(--fg-color);
+    min-height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
+div, main {
+    margin-left: var(--margin-size);
+    margin-right: var(--margin-size);
+}
+
 body {
-    height: 100%;
-    margin: 0;
+    background-color: var(--bg-color);
+    margin: var(--margin-size) 0 var(--margin-size) 0;
     padding: 0;
     font-family: var(--default-font);
     width: 100%;
-    max-width: calc(var(--main-width) + var(--aside-width));
+    max-width: calc(var(--main-width) + var(--aside-width) + 2*var(--margin-size));
 }
+
+a {
+    color: var(--fg-color);
+}
+
+h1{
+    margin: 0;
+}
+
+header{
+    margin: var(--margin-size);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* switch */
+
+
+input[type='checkbox'].switch {
+    /* Form */
+    -webkit-appearance: none;
+    position: relative;
+    outline: none;
+
+    /* TODO */
+
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    border: solid 1px gray;
+}
+
+input[type='checkbox'].switch::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    border-radius: 14px;
+    width: 14px;
+    height: 14px;
+    background-color: gainsboro;
+    border: solid 1px gray;
+
+    top: 1px;
+    left: 1px;
+}
+
+input[type='checkbox'].switch:checked {
+    /* TODO */
+    background-color: darkgray;
+}
+
+input[type='checkbox'].switch:checked::after {
+    left: 21px;
+}
+
+
+
