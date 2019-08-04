@@ -1,0 +1,3 @@
+[build]
+  command = "npx sapper export"
+  publish = "__sapper__/export"

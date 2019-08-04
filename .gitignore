@@ -1,0 +1,10 @@
+.DS_Store
+.vscode
+
+/node_modules/
+/src/node_modules/
+
+yarn-error.log
+
+/__sapper__/
+.netlify
