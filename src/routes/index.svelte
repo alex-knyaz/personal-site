@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     text-align: end;
+    flex-wrap: wrap-reverse;
   }
 
   .intro > img {
