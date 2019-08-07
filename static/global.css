@@ -1,18 +1,10 @@
-
-/* CONSTANTS */
-
-:root[data-theme="dark"] {
-    /* DARK THEME */
-    --bg-color: #222;
-    --bgA-color: #000;
-    --fg-color: #fff;
-
-}
-
 :root {
+    /* COLORS */
     --bg-color: #fff;
     --bgA-color: #eee;
     --fg-color: #000;
+
+    /* FONTS */
 
     --default-font: 
         system, 
@@ -25,22 +17,32 @@
         "Lucida Grande", 
         sans-serif;
 
+    /* MARGINS */
+
     --main-width: 80ch;
     --aside-width: 20ch;
     --margin-size: 2ch;
 }
 
+:root[data-theme="dark"] {
+    /* DARK THEME */
+    --bg-color: #222;
+    --bgA-color: #000;
+    --fg-color: #fff;
+
+}
 
 /* CODE */
-
 
 html {
     background-color: var(--bgA-color);
     color: var(--fg-color);
-    min-height: 100%;
-    width: 100%;
+
     display: flex;
     justify-content: center;
+
+    min-height: 100%;
+    width: 100%;
 }
 
 div, main {

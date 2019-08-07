@@ -8,19 +8,15 @@
     display: flex;
     justify-content: center;
     text-align: end;
+    flex-wrap: wrap-reverse;
   }
 
-  .intro > * {
+  .intro > img {
     border-radius: 10px;
     width: 256px;
     height: 246px;
   }
-
-  .icon {
-    width: 16px;
-    fill: var(--fg-color);
-  }
-
+  
 </style> 
 
 <svelte:head>
@@ -53,6 +49,6 @@
 
   <ul>
     <li> <a href="/">Personal site</a> </li>
-    <li> <a href="TODO">CSS theme</a> </li>
+    <li> <a href="https://github.com/alex-knyaz/personal-site">CSS theme</a> </li>
   </ul>
 </Layout>
