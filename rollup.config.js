@@ -7,6 +7,8 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 
+import { mdsvex } from 'mdsvex';
+
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
@@ -24,10 +26,15 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
+				extensions: ['.svelte', '.svx'],
 				dev,
 				hydratable: true,
-				emitCss: true
+				emitCss: true,
+				preprocess: mdsvex({
+					extension: '.svx',
+				}),		 
 			}),
+			
 			resolve({
 				browser: true,
 				dedupe
@@ -35,7 +42,7 @@ export default {
 			commonjs(),
 
 			legacy && babel({
-				extensions: ['.js', '.mjs', '.html', '.svelte'],
+				extensions: ['.js', '.mjs', '.html', '.svelte', '.svx'],
 				runtimeHelpers: true,
 				exclude: ['node_modules/@babel/**'],
 				presets: [
@@ -68,8 +75,12 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
+				extensions: ['.svelte', '.svx'],
 				generate: 'ssr',
-				dev
+				preprocess: mdsvex({
+					extension: '.svx',
+				}),		 
+				dev,
 			}),
 			resolve({
 				dedupe

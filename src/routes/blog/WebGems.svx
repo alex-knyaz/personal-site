@@ -1,0 +1,42 @@
+Awesome lists
+-------------
+
+[Awesome lists](https://awesome.re/) - List of awesome lists.
+
+[Explorables](https://explorabl.es) - List of explorables.
+
+
+Wed apps
+--------
+
+[mathcha](https://mathcha.io) - online document editor with accent on mathematics.
+
+[webdemo.myscript.com](https://webdemo.myscript.com) - very good handwriting recognition for text, math and diagrams.
+
+
+YouTube
+-------
+
+[Making 8-bit computer](https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA) Building computer from scratch.
+
+[Machine Thinking](https://www.youtube.com/channel/UCfsznjef2zGJnrCRQBXqo6Q) Machining history.
+
+[3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) Math done beautifully.
+
+Blogs
+-----
+
+[Must read](https://worrydream.com)
+
+[Interesting notes](http://xahlee.info)
+
+[Writing an OS in Rust](https://os.phil-opp.com/) - Writing OS in Rust.
+
+[Red Blob Games](https://www.redblobgames.com/) - Game algorithms.
+
+Programming guides 
+------------------
+
+[HTML & CSS](https://internetingishard.com)
+
+[Refactoring QA](https://refactoring.guru)
