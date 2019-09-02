@@ -6,7 +6,7 @@ Awesome lists
 [Explorables](https://explorabl.es) - List of explorables.
 
 
-Wed apps
+Web apps
 --------
 
 [mathcha](https://mathcha.io) - online document editor with accent on mathematics.
