@@ -42,7 +42,7 @@
   <h2>Blog</h2>
 
   <ul>
-    <li><a href="blog/WebGems">The web gems</a></li>
+    <li><a href="/blog/WebGems">The web gems</a></li>
   </ul>
 
   <h2>Projects</h2>

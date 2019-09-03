@@ -10,7 +10,7 @@
     "license": "UNLICENSED",
     "scripts": {
         "start": "run-p export serve",
-        "export": "sapper export --legacy",
+        "export": "sapper export --legacy --ext '.svelte .svx'",
         "serve": "serve __sapper__/export",
         "clean": "rm -r __sapper__ node_modules src/node_modules"
     },
